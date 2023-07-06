@@ -12,11 +12,6 @@ Redux folder includes the reducer.js and store.js files to manage and update sta
 <br>
 <br>
 The reducer of the store is able to add, delete, edit or change status of a task to "completed".
-<br>
-
-<br>
-Interest component will allow user to calculate a monthly repayment amount based on the purchase amount and 
-term (Months) that the user has chosen 
 </p>
 <br>
 
@@ -25,8 +20,6 @@ term (Months) that the user has chosen
 > Download or clone the repository
 
 > Run `npm install`
-
-> Run `npm i react-router-dom`
 
 > Then run `npm start`
 
