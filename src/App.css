@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --bg-color: rgb(102, 168, 168);
+    --sec-bg-color: antiquewhite;
+  }
+  
+/* Todos.js */
+
+.add-todos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    position: sticky;
+    height: 30vh;
+}
+
+.add-todos-header{
+    position: fixed;
+    padding: 1.5rem;
+    text-decoration: underline;
+}
+
+.add-todos-header h1{
+    font-size: 3rem;
+}
+
+.todo-input{
+    padding-top: 7rem;
+    position: fixed;
+}
+
+.todo-input input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.add-btn{
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: 35%;
+}
+
+
+/* DisplayTodos.js */
+
+.all-tasks{
+    margin-left: 2.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.task-item{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: var(--sec-bg-color);
+    border-radius: 5px;
+    margin: 0.25rem;
+}
+
+.task-header{
+    text-decoration: underline;
+    padding: 0.25rem;
+}
+
+/* TodoItem.js */
+
+.todo-icons{
+    margin: 0.25rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
