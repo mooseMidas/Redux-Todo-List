@@ -23,8 +23,12 @@ const TodoItem = (props) => {
   //user will be promted to provide new todo item
   const updateItem = () => {
     let userChange = prompt(`Please input new ToDo item:`);
-    let addData = { id: props.id, content: userChange };
-    dispatch(updateTodos(addData));
+    if (userChange !== null && userChange.trim() !== "") {
+      let addData = { id: props.id, content: userChange };
+      dispatch(updateTodos(addData));
+    } else {
+      alert("No changes made. Task content remains the same.");
+    }
   };
 
   const removeItem = () => {
